@@ -4,7 +4,7 @@
     "title": "Get Geocoded Location",
     "openaiSpec": {
         "name": "get_geocode",
-        "description": "Retrieve the geocoded location of a specified location.",
+        "description": "Retrieve the geocoded location of a specified location, for example, the latitude and longitude of a city. Can also return the timezone, population and elevation of the specified location.",
         "parameters": {
             "type": "object",
             "required": [
@@ -31,8 +31,8 @@
             "name": "count",
             "type": "integer",
             "label": "Number of results",
-            "description": "The number of results to return for location searches. Default: 5.",
-            "defaultValue": "5"
+            "description": "The number of results to return for location searches. Default: 100.",
+            "defaultValue": "100"
         }
     ],
     "authenticationType": "AUTH_TYPE_NONE",
