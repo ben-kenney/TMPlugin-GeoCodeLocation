@@ -1,0 +1,41 @@
+{
+    "id": "get_geocode",
+    "uuid": "6381f8c3-8531-47ff-8108-948339c5c28a",
+    "title": "Get Geocoded Location",
+    "openaiSpec": {
+        "name": "get_geocode",
+        "description": "Retrieve the geocoded location of a specified location.",
+        "parameters": {
+            "type": "object",
+            "required": [
+                "location"
+            ],
+            "properties": {
+                "language": {
+                    "type": "string",
+                    "default": "en",
+                    "description": "The language for the location search. Use ISO 639-1 two-letter language codes (e.g., 'en' for English, 'es' for Spanish)."
+                },
+                "location": {
+                    "type": "string",
+                    "description": "The name of the location to search for. If a state is provided, spell out the full name (e.g., Texas instead of TX). The location is always treated as a city by default."
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "outputType": "respond_to_ai",
+    "oauthConfig": null,
+    "userSettings": [
+        {
+            "name": "count",
+            "type": "integer",
+            "label": "Number of results",
+            "description": "The number of results to return for location searches. Default: 5.",
+            "defaultValue": "5"
+        }
+    ],
+    "authenticationType": "AUTH_TYPE_NONE",
+    "implementationType": "javascript",
+    "dynamicContextEndpoints": []
+}
