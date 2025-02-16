@@ -10,6 +10,7 @@ After installing this plugin, you can ask something like:
 
 ```
 The geocoded location for Toronto, Ontario, Canada is as follows:
+
 Name: Toronto
 Latitude: 43.70011
 Longitude: -79.4163
@@ -18,4 +19,13 @@ Country: Canada
 Administrative Region: Ontario
 Timezone: America/Toronto
 Population: 2,600,000
+```
+
+> What is the latitude and longitude of London, United Kindom?
+
+```
+The latitude and longitude of London, United Kingdom are:
+
+Latitude: 51.50853
+Longitude: -0.12574
 ```
